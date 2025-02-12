@@ -37,6 +37,10 @@ body {
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-*{
-    @apply transition-colors delay-200 
+body,p,h1,h2,button{
+    @apply transition-colors duration-200 ease-in-out
+}
+
+body, p, h1, h2, button {
+    will-change: background-color, color;
 }

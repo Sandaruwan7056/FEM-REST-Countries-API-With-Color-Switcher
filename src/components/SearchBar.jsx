@@ -14,7 +14,7 @@ const SearchBar = ({searchedCountry , setSearchedCountry}) => {
      role='search' 
      value={searchedCountry}
      onChange={(e)=>setSearchedCountry(e.target.value)}
-    className='w-full outline-none text-dark-gray-lm-input dark:text-white'/>
+    className='w-full outline-none text-dark-gray-lm-input dark:text-white placeholder:text-dark-gray-lm-input placeholder:dark:text-white'/>
     </div>
     </>
   )

@@ -70,7 +70,7 @@ const DetailsPage = () => {
               <div className="columns-[250px] gap-5 *:py-2">
                 <p>
                   Native Name :{" "}
-                  <span className="font-semivold text-very-dark-blue-lm-text/70 dark:text-white/70">
+                  <span className="font-semibold text-very-dark-blue-lm-text/70 dark:text-white/70">
                     {uniqueCountry.name.nativeName 
                     ? Object.values(uniqueCountry.name.nativeName).map((language)=>
                     language.common)
@@ -80,7 +80,7 @@ const DetailsPage = () => {
                 </p>
                 <p>
                   Porpulation:{" "}
-                  <span className="font-semivold text-very-dark-blue-lm-text/70  dark:text-white/70">
+                  <span className="font-semibold text-very-dark-blue-lm-text/70  dark:text-white/70">
                     {uniqueCountry.population}
                   </span>
                 </p>
@@ -92,7 +92,7 @@ const DetailsPage = () => {
                 </p>
                 <p>
                   Sub Region :
-                  <span className="font-semivold text-very-dark-blue-lm-text/70 dark:text-white/70">
+                  <span className="font-semibold text-very-dark-blue-lm-text/70 dark:text-white/70">
                     {uniqueCountry.subregion
                       ? uniqueCountry.subregion
                       : " No Subregion"}
@@ -100,19 +100,19 @@ const DetailsPage = () => {
                 </p>
                 <p>
                   Capital :{" "}
-                  <span className="font-semivold text-very-dark-blue-lm-text/70 dark:text-white/70">
+                  <span className="font-semibold text-very-dark-blue-lm-text/70 dark:text-white/70">
                     {uniqueCountry.capital}
                   </span>
                 </p>
                 <p>
                   Top Level Domain :{" "}
-                  <span className="font-semivold text-very-dark-blue-lm-text/70 dark:text-white/70">
+                  <span className="font-semibold text-very-dark-blue-lm-text/70 dark:text-white/70">
                     {uniqueCountry.tld.join(", ")}
                   </span>
                 </p>
                 <p>
                   Currencies :{" "}
-                  <span className="font-semivold text-very-dark-blue-lm-text/70 dark:text-white/70">
+                  <span className="font-semibold text-very-dark-blue-lm-text/70 dark:text-white/70">
                     {uniqueCountry.currencies
                       ? Object.values(uniqueCountry.currencies)
                           .map((currency) => currency.name)
@@ -122,7 +122,7 @@ const DetailsPage = () => {
                 </p>
                 <p>
                   Languages :{" "}
-                  <span className="font-semivold text-very-dark-blue-lm-text/70  dark:text-white/70">
+                  <span className="font-semibold text-very-dark-blue-lm-text/70  dark:text-white/70">
                     {uniqueCountry.languages &&
                       Object.values(uniqueCountry.languages)
                         .map((language) => language)

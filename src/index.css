@@ -19,8 +19,8 @@
     --color-white: hsl(0, 0%, 100%);
 }
 
-* {
-    @apply transition-colors delay-200;
+html,body,p,h1,h2,button {
+    @apply transition-colors duration-200;
 }
 
 .wrapper {

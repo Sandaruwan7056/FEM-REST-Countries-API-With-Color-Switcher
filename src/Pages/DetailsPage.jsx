@@ -10,7 +10,7 @@ const DetailsPage = () => {
   const [uniqueCountry, setUniqueCountry] = useState(null);
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [border, setBorder] = useState("");
+ 
 
   const fetchCountry = async () => {
     setError("");
@@ -22,7 +22,6 @@ const DetailsPage = () => {
       } else {
         const data = await res.json();
         setUniqueCountry(data[0]);
-        console.log(uniqueCountry);
       }
     } catch (error) {
       setError("Try again Later");
@@ -60,6 +59,7 @@ const DetailsPage = () => {
               src={uniqueCountry.flags.svg}
               alt={uniqueCountry.name.common}
               className="w-full h-full  object-cover "
+              loading="lazy"
             />
           </div>
           <div className="flex flex-col flex-1 gap-5 ">
@@ -139,9 +139,6 @@ const DetailsPage = () => {
                         <button
                           key={index}
                           className="bg-white text-[12px] dark:text-white/70 dark:bg-dark-blue  px-5 py-1 shadow-md cursor-pointer "
-                          onClick={(e) => {
-                            setBorder(e.target.textContent);
-                          }}
                         >
                           {border}
                         </button>

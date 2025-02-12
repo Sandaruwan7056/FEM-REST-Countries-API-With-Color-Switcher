@@ -8,6 +8,7 @@ const CountryCard = ({ country}) => {
       <img src={country.flags.png} alt={country.name.common  } 
       width={320}
       height={213}
+      loading="lazy"
       className=' rounded-t-md  aspect-[320/213] h-fit w-full object-cover' />
 
       <section className='px-5 py-8 *:dark:text-white'>
